@@ -1,19 +1,20 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import clsx from "../../utils/clsx";
-import { BUTTON_VARIANT_STYLES, spacing } from "./styles";
+import { BUTTON_VARIANT_STYLES, flex, spacing } from "./styles";
 import { ButtonProps } from "./types";
 
 const Button: FC<ButtonProps> = (props) => {
   const { children, variant = "primary", Icon, ...buttonProps } = props;
 
-  const variantStyle = BUTTON_VARIANT_STYLES[variant];
+  const variantStyle = useMemo(
+    () => clsx(Object.values(BUTTON_VARIANT_STYLES[variant])),
+    [variant]
+  );
 
   return (
     <button
       {...buttonProps}
-      className={`${spacing} ${clsx(
-        Object.values(variantStyle)
-      )} w-fit font-medium rounded transition flex gap-2 items-center border`}
+      className={`${variantStyle} ${spacing} ${flex} font-bold rounded-lg border transition`}
     >
       {Icon && <Icon />}
       {children}

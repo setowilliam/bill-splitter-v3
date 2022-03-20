@@ -1,18 +1,17 @@
 import "../global.css";
 import type { AppProps } from "next/app";
-import PageLayout from "../layout-components/PageLayout";
-import Header from "../layout-components/Header";
-import Footer from "../layout-components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <PageLayout>
+    <div className="grid grid-rows-[auto_1fr_auto] h-dynamic-screen">
       <Header />
       <div className="overflow-auto">
         <Component {...pageProps} />
       </div>
       <Footer />
-    </PageLayout>
+    </div>
   );
 }
 

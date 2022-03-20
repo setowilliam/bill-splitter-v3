@@ -11,7 +11,7 @@ html,
 }
 
 @layer components {
-  .h-safari {
+  .h-dynamic-screen {
     height: 100vh;
     height: 100dvh;
   }

@@ -5,7 +5,7 @@ export const BUTTON_VARIANT_STYLES: Record<
   Record<string, string>
 > = {
   primary: {
-    background: "bg-blue-700 hover:bg-blue-800 active:bg-blue-900 ",
+    background: "bg-blue-700 hover:bg-blue-800 active:bg-blue-900",
     text: "text-white",
   },
   secondary: {
@@ -20,3 +20,5 @@ export const BUTTON_VARIANT_STYLES: Record<
 };
 
 export const spacing = "px-4 py-2";
+
+export const flex = "flex gap-2 items-center justify-center";

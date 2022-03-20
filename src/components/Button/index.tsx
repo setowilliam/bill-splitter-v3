@@ -14,7 +14,9 @@ const Button: FC<ButtonProps> = (props) => {
   return (
     <button
       {...buttonProps}
-      className={`${variantStyle} ${spacing} ${flex} font-bold rounded-lg border transition`}
+      className={`${
+        props.className ?? ""
+      } ${variantStyle} ${spacing} ${flex} font-bold rounded-lg border transition`.trimStart()}
     >
       {Icon && <Icon />}
       {children}

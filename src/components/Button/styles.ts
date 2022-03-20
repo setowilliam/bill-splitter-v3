@@ -9,7 +9,7 @@ export const BUTTON_VARIANT_STYLES: Record<
     text: "text-white",
   },
   secondary: {
-    border: "border-[1px] border-solid border-gray-200 hover:border-blue-700",
+    border: "border-solid border-gray-200 hover:border-blue-700",
     background: "bg-white-700 active:bg-blue-900",
     text: "text-blue-700 active:text-white",
   },

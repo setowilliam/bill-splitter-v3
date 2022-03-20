@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#__next {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+@layer components {
+  .h-safari {
+    height: 100vh;
+    height: 100dvh;
+  }
+}

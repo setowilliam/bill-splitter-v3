@@ -13,7 +13,7 @@ const Button: FC<ButtonProps> = (props) => {
       {...buttonProps}
       className={`${spacing} ${clsx(
         Object.values(variantStyle)
-      )} w-fit font-medium rounded transition flex gap-2 items-center`}
+      )} w-fit font-medium rounded transition flex gap-2 items-center border`}
     >
       {Icon && <Icon />}
       {children}

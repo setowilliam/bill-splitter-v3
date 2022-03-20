@@ -8,7 +8,7 @@ const Footer: FC<FooterProps> = (props) => {
 
   return (
     <div className="p-4 border-t grid gap-4 grid-cols-2">
-      <Button>Add</Button>
+      <Button variant="regular">Add</Button>
       <Button>Calculate</Button>
     </div>
   );

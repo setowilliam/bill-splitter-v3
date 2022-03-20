@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] h-dynamic-screen">
       <Header />
-      <div className="overflow-auto">
+      <div className="overflow-auto min-h-full p-4">
         <Component {...pageProps} />
       </div>
       <Footer />

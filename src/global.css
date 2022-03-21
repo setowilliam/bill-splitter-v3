@@ -7,7 +7,6 @@ html,
 #__next {
   height: 100vh;
   height: 100dvh;
-  overflow: hidden;
 }
 
 @layer components {

@@ -3,7 +3,7 @@ import { MdReceipt } from "react-icons/md";
 
 const Header: FC = () => {
   return (
-    <div className="p-4 border-b">
+    <div className="p-4 border-b fixed top-0 w-full">
       <h1 className="text-2xl font-bold flex gap-2 items-center">
         <MdReceipt />
         Bill Splitter
